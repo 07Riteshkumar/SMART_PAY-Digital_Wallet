@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f1efff;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 75px;
+    background-color: #593bc5;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+}
+
+header h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+header span {
+    font-size: 17px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.welcome-card {
+    width: 100%;
+    max-width: 685px;
+    background-color: white;
+    padding: 65px 40px 50px;
+    border-radius: 22px;
+    text-align: center;
+    box-shadow: 0 12px 35px rgba(89, 59, 197, 0.15);
+}
+
+.card-icon {
+    font-size: 55px;
+    color: #29204e;
+    margin-bottom: 45px;
+}
+
+.welcome-card h1 {
+    color: #6041cf;
+    font-size: 43px;
+    margin-bottom: 20px;
+}
+
+.welcome-card p {
+    color: #625d7b;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+    margin-bottom: 35px;
+}
+
+.features div {
+    font-size: 20px;
+    color: #29204e;
+}
+
+button {
+    background-color: #593bc5;
+    color: white;
+    border: none;
+    padding: 17px 38px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #39238e;
+    transform: translateY(-3px);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #77718f;
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 0 5%;
+    }
+
+    .welcome-card {
+        padding: 45px 20px;
+    }
+
+    .welcome-card h1 {
+        font-size: 30px;
+    }
+
+    .welcome-card p {
+        font-size: 15px;
+    }
+
+    .features div {
+        font-size: 16px;
+    }
+}
